@@ -9,6 +9,7 @@ import com.ruoyi.common.annotation.Excels;
 import com.ruoyi.common.core.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -21,6 +22,7 @@ import java.util.List;
  * 
  * @author Mason Wang
  */
+
 public class SysDeclareForm extends BaseEntity
 {
     private static final long serialVersionUID = 1L;
@@ -31,7 +33,7 @@ public class SysDeclareForm extends BaseEntity
 
     /** 债权形成说明 */
     @Excel(name = "债权形成说明")
-    private String info;
+    private String description;
 
     /** 债权性质 */
     @Excel(name = "债权性质")
